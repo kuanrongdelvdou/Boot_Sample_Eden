@@ -25,6 +25,27 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+		<!-- Ribbon相关 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<!-- 说好的添加 Ribbon 相关的依赖, 怎么还添加了 Eureka?  spring-cloud-starter-eureka 
+			          后面没有 server 说明这个服务消费者是个 Eureka 客户端(服务消费者), Ribbon 需要和 Eureka 整合使用-->
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-ribbon</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
 		<!-- 修改后立即生效，热部署 -->
 		<dependency>
 			<groupId>org.springframework</groupId>

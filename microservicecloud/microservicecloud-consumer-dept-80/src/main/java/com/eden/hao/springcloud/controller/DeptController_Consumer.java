@@ -13,7 +13,9 @@ import com.eden.hao.entity.Dept;
 @RestController
 public class DeptController_Consumer {
 	
-	private static final String REST_URL_PREFIX = "http://localhost:8001";
+	//private static final String REST_URL_PREFIX = "http://localhost:8001";
+	
+	private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";  // ----> 这才是真正的微服务访问
 
 	/*[1] 使用 restTemplate 访问 restfu 接口非常的简单粗暴无脑. 有三个参数 url, requestMap, ResponseBean.class
 
