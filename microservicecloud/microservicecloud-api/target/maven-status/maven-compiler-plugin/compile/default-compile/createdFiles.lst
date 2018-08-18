@@ -1,2 +1,4 @@
+com\eden\hao\service\DeptClientServiceFallbackFactory$1.class
+com\eden\hao\service\DeptClientServiceFallbackFactory.class
 com\eden\hao\entity\Dept.class
 com\eden\hao\service\DeptClientService.class
