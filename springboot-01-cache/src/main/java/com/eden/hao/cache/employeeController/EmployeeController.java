@@ -21,4 +21,25 @@ public class EmployeeController {
 		
 		return emp;
 	}
+	
+	// 更新新员工数据
+	@GetMapping("/emp")
+	public Employee update(Employee emp){
+
+		employeeService.updateEmp(emp);
+		return emp;
+	}
+	
+
+	@GetMapping("/delemp")
+	public String deleteEmp(Integer id){
+		employeeService.deleteEmp(id); 
+		return "successfully delete emp, id is : " + id;
+	}
+	
+	@GetMapping("/emp/lastname/{lastName}")
+	public Employee getEmployeeByLastName(@PathVariable("lastName") String lastName){
+		return employeeService.getEmployeeByLastName(lastName);
+	}
+	
 }
